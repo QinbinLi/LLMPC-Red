@@ -27,7 +27,7 @@ cd LLM-PBE
 conda create -n llm-pbe python=3.10 -y
 conda activate llm-pbe
 pip install -r requirements.txt
-python -m attacks.DataExtraction.llm_pc_attack_baseline --model LLM-PBE/LLMPC-Red-Team-Llama3.1-8b-instruct
+python -m attacks.DataExtraction.llm_pc_attack_baseline --model LLM-PBE/Llama3.1-8b-instruct-LLMPC-Red-Team
 ```
 You can find `ASR (Attack Success Rate): 2.46% (475/19337)` in the output. Note that it requires your HuggingFace account has access to [Meta-Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct). 
 
