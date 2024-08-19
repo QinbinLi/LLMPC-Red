@@ -6,10 +6,17 @@ We have released the model in HuggingFace [here](https://huggingface.co/LLM-PBE/
 
 ## Data for Development Phase
 The data for development phase are available under `data` directory. There are two files
-- LLM-PC-development-scrubbed-data.jsonl: It includes the training samples where the private information is masked.
+- LLM-PC-development-scrubbed-data.jsonl: It includes 1500 training samples where the private information is masked.
 - LLM-PC-development-pii.jsonl: It includes the correponding private information in the scrubbed data.
 
-**Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your development. In the test phase, we will use another similar data (the structure is same) to test your solution. 
+## Requirements
+**Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your reference in the development phase. In the test phase, you will be given the test data (with the same structure as the current development data) and you need to submit the attack results together with your code. 
+
+**Solution**: The running time of your attack method should be less than 24 hours with 2*H100. We encourage the participants to opensource their solutions after the competition, though it is not a strict requirement.
+
+**Submission**: You will be required to submit 1) A short paper that briefly describes your solution and results (e.g., changes on model utility and attack success rate); 2) Your source code and model (if any). More information will be provided later.
+
+
 
 
 ## Demo Attack
