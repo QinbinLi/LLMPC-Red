@@ -31,6 +31,11 @@ python -m attacks.DataExtraction.llm_pc_attack_baseline --model LLM-PBE/Llama3.1
 ```
 You may find warnings like `The attention mask and the pad token id were not set. xxx`, which is normal. You can find `ASR (Attack Success Rate): 2.46% (475/19337)` in the output. Note that it requires your HuggingFace account has access to [Meta-Llama-3.1-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct). 
 
+You can also set the `num_sample` parameter to only run specific number of samples to have a quick test, e.g.,
+```
+python -m attacks.DataExtraction.llm_pc_attack_baseline --model LLM-PBE/Llama3.1-8b-instruct-LLMPC-Red-Team --num_sample 1000
+```
+
 If you encounter the following error message when running the demo attack:
 ```
 if self.pad_token_id is not None and self.pad_token_id < 0:
