@@ -10,7 +10,7 @@ The data for development phase are available under `data` directory. There are t
 - LLM-PC-development-pii.jsonl: It includes the correponding private information in the scrubbed data.
 
 ## Requirements
-**Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your reference in the development phase. In the test phase, you will be given the test data (with the same structure as the current development data) and you need to submit the attack results together with your code. 
+**Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your reference in the development phase. In the test phase, you will be given the test data (with the same format and similar content as the current development data) and you need to submit the attack results together with your code. 
 
 **Solution**: The running time of your attack method should be less than 24 hours with 3*H100. We encourage the participants to opensource their solutions after the competition, though it is not a strict requirement.
 
