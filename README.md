@@ -9,6 +9,11 @@ The data for development phase are available under `data` directory. There are t
 - LLM-PC-development-scrubbed-data.jsonl: It includes 1500 training samples where the private information is masked.
 - LLM-PC-development-pii.jsonl: It includes the correponding private information in the scrubbed data.
 
+
+## Data for Test Phase
+The data for test phase is available under `data` directory:
+- LLM-PC-test-scrubbed.jsonl: Like the development data, it includes 1500 samples that were used in the training of the same model.
+
 ## Requirements
 **Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your reference in the development phase. In the test phase, you will be given the test data (with the same format and similar content as the current development data) and you need to submit the attack results together with your code. 
 
