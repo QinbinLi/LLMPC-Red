@@ -24,7 +24,7 @@ The data for test phase is available under `data` directory:
 
 2. Your predicted jsonl file `result.jsonl` where each line contains the predicted PII (e.g., `{"NAME-1": "xxx"}`) of the corresponding line in the test data. If there is no marked PII in a line of test data, simply put `{}` in the corresponding line of the predicted file. You can refer to the [submission template](https://github.com/QinbinLi/LLMPC-Red/blob/main/data/LLM-PC-test-pii-template.jsonl);
 
-3. Your source code and model (if any). The source code should be runnable by `python main.py` and outputs the above jsonl file.
+3. Your source code and model (if any). The source code should be runnable by `python main.py` and outputs the above jsonl file. For the model, you can provide a link to the model.
 
 > [!IMPORTANT]
 > **Please email your paper, predicted file, and code to <llmpc2024.info@gmail.com> by Nov 1st AOE.**
