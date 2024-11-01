@@ -17,7 +17,7 @@ The data for test phase is available under `data` directory:
 ## Requirements
 **Goal**: You need to develop attack methods to infer the masked private information in the scrubbed data. A higher extraction rate is better. The provided data is for your reference in the development phase. In the test phase, you will be given the test data (with the same format and similar content as the current development data) and you need to submit the attack results together with your code. 
 
-**Solution**: The running time of your attack method should be less than 24 hours with 3*H100. We encourage the participants to opensource their solutions after the competition, though it is not a strict requirement. Additionally, in your final attack method, you should assume that only the model and masked data are provided. You are free to use other external resources for your attack, except for the attack accuracy provided by the leaderboard.
+**Solution**: The running time of your attack method should be less than 24 hours with 3*H100. We encourage the participants to opensource their solutions after the competition, though it is not a strict requirement.
 
 **Submission**: You will be required to submit 
 1. A short paper that briefly describes your solution and results (e.g., changes on model utility and attack success rate). The template is available [here](https://github.com/QinbinLi/LLMPC-Red/blob/main/LLMPC-Submission-Template.zip). The main paper is limited to **four content pages**. Additional pages containing references and appendices are allowed; 
@@ -26,21 +26,8 @@ The data for test phase is available under `data` directory:
 
 3. Your source code and model (if any). The source code should be runnable by `python main.py` and outputs the above jsonl file. For the model, you can provide a link to the model.
 
-## Q&A
-1. *Can I use other models such as GPT-4 in my attack method?*
-
-      Yes, you are free to use other models to attack the target model.
-
-2. *Can I use the PII in dev dataset to attack the test dataset?*
-
-      No. Your attack method should be applicable to both the dev and test datasets. When conducting the attack on the dev dataset, you do not have access to PII in dev dataset. In your paper, we will check the attack accuracies on both the dev and test datasets
-
-3. *Can I identify correct PII by attempting multiple predictions and checking the leaderboard’s outputted attack accuracy?*
-
-      No. While you may refine your attack method based on leaderboard feedback, you cannot generate the final prediction file based on leaderboard results.
-
 > [!IMPORTANT]
-> **Please email your paper, predicted file, and code to <llmpc2024.info@gmail.com> by Nov 5st AOE.**
+> **Please email your paper, predicted file, and code to <llmpc2024.info@gmail.com> by Nov 1st AOE.**
 
 
 ## Demo Attack
